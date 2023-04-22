@@ -42,7 +42,12 @@
         /* color: */
       }
 
-    
+      .date {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      color:blue;
+      }
 
       /*.img {
         width: 100%;
@@ -56,11 +61,12 @@
 
   <body>
     <div class="container d-flex justify-content-center align-items-center pt-4" >
-        <div class="card p-4">
+        <div class="card p-5">
    
                 <!-- <label for="cityInput"></label> -->
-            
-            <div style="display: flex;">
+            <p id="currentDate" class="p-0 m-0 ms-auto date" style="color:white;">Today</p>
+
+            <div style="display: flex;" class="pt-2">
                 <input type="text" id="cityInput" placeholder="Enter City or Zip Code:" style="width: 100%;" class="cityInputStyle">
             </div>
             
@@ -68,13 +74,11 @@
             <div class="row pt-3">
                 <div class="col-md-8">
                     <div id="weather" style="color:white;">
-                        
                         <p id="city" class="fs-3 city" style="color:white;">Charlotte</p>
-                        
                         <p id="tempHiLo">High: 55 °F | Low: 44 °F </p>
                         <p id="currentTemp" class="fs-3">91 F</p>
                         <p id="currentConditions">Sunny</p>
-                        <p id="currentDate" class="" style="color:white;">Today</p>
+                      
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -86,7 +90,7 @@
             <div>
                 <br><br><br><br>
                 
-                <h4 style="color:white;">Today in Charlotte, NC</h4>
+                <h4 style="color:white;">This Week In Charlotte, NC</h4>
                 <table>
                     <tr class="" style="color:white;">
                         <td class="text-center">Sun</td>
@@ -108,7 +112,7 @@
                     </tr>
                     <tr style="color:white;">
                         <td class="text-center">70°F</td>
-                        <td class="text-center">72°F</td>
+                        <td class="text-center">55°F</td>
                         <td class="text-center">75°F</td>
                         <td class="text-center">78°F</td>
                         <td class="text-center">80°F</td>
