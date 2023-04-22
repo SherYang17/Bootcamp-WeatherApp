@@ -61,7 +61,6 @@ cityInput.addEventListener("change", function() {
 
 
 
-
 // For temperature in Fahrenheit use units=imperial or &units=imperial
 
 
